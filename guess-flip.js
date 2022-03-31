@@ -1,6 +1,11 @@
 import {flipACoin} from "./modules/coin.mjs";
+import { createRequire } from 'module';
 
-var call = process.argv.slice(2); //user input 
+const require = createRequire(import.meta.url);
+const argv = require('minimist')(process.argv.slice(2));
+const call = argv.call;
+
+//var call = process.argv.slice(2); //user input 
 
 if (call == "heads" | call == "tails"){
     console.log(flipACoin(call)); 
