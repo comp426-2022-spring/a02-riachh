@@ -12,7 +12,7 @@ const number = args.number || 1;
 
 /*if (number == null | isNaN(number) | number <= 0){
     number = 1; 
-}*/ 
+}this comment is so i can push again*/ 
 
 const flips = coinFlips(number);
 console.log(flips);
