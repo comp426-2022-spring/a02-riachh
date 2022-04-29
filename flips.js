@@ -17,3 +17,5 @@ const number = args.number || 1;
 const flips = coinFlips(number);
 console.log(flips);
 console.log(countFlips(flips)); 
+
+//Change for commit 
